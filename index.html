@@ -3,30 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Empresa familiar con 25+ años de experiencia en administración de fincas urbanas y patrimonios inmobiliarios en Madrid. Colegiados, transparentes y comprometidos con cada comunidad.">
-<meta property="og:title" content="Uceta & Torrealday — Administración de Fincas · Madrid">
-<meta property="og:description" content="Gestión profesional de comunidades de propietarios y patrimonios. Transparencia, competencia y proximidad con el cliente.">
-<meta property="og:image" content="https://www.ucetatorrealday.es/og-image.jpg">
-<meta property="og:url" content="https://www.ucetatorrealday.es">
+<title>Uceta &amp; Torrealday — Administración de Fincas · Madrid</title>
+ 
+<!-- SEO: Meta description -->
+<meta name="description" content="Empresa familiar con más de 25 años gestionando comunidades de propietarios y patrimonios inmobiliarios en Madrid. Colegiados, transparentes y comprometidos. Llámenos: 91 535 07 13.">
+ 
+<!-- SEO: Canonical -->
+<link rel="canonical" href="https://www.ucetatorrealday.es/">
+ 
+<!-- SEO: Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ucetatorrealday.es/">
+<meta property="og:title" content="Uceta &amp; Torrealday — Administración de Fincas · Madrid">
+<meta property="og:description" content="Empresa familiar con más de 25 años gestionando comunidades de propietarios y patrimonios inmobiliarios en Madrid. Colegiados, transparentes y comprometidos.">
+<meta property="og:image" content="https://www.ucetatorrealday.es/og-image.jpg">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Uceta &amp; Torrealday">
+ 
+<!-- SEO: Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Uceta & Torrealday — Administración de Fincas · Madrid">
-<meta name="twitter:description" content="Gestión profesional de comunidades de propietarios y patrimonios.">
-<link rel="canonical" href="https://www.ucetatorrealday.es">
+<meta name="twitter:title" content="Uceta &amp; Torrealday — Administración de Fincas · Madrid">
+<meta name="twitter:description" content="Empresa familiar con más de 25 años gestionando comunidades de propietarios y patrimonios inmobiliarios en Madrid.">
+<meta name="twitter:image" content="https://www.ucetatorrealday.es/og-image.jpg">
+ 
+<!-- Favicon -->
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+ 
+<!-- Rendimiento: preconnect Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-
+ 
+<!-- SEO: JSON-LD LocalBusiness -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   "name": "Uceta & Torrealday",
-  "description": "Administración de fincas urbanas y patrimonios inmobiliarios en Madrid",
+  "description": "Administración de fincas urbanas y patrimonios inmobiliarios en Madrid. Empresa familiar colegiada con más de 25 años de experiencia.",
   "url": "https://www.ucetatorrealday.es",
-  "telephone": "+34915350713",
+  "telephone": "+34-91-535-07-13",
   "email": "gerencia@ucetatorrealday.es",
   "address": {
     "@type": "PostalAddress",
@@ -35,23 +52,32 @@
     "postalCode": "28003",
     "addressCountry": "ES"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.4397,
+    "longitude": -3.7003
+  },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
     "opens": "10:00",
     "closes": "14:00"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "40.4637",
-    "longitude": "-3.6919"
-  }
+  "foundingDate": "1998",
+  "areaServed": {
+    "@type": "City",
+    "name": "Madrid"
+  },
+  "memberOf": [
+    {"@type": "Organization", "name": "Colegio de Economistas de Madrid"},
+    {"@type": "Organization", "name": "Colegio Profesional de Administradores de Fincas de Madrid"}
+  ]
 }
 </script>
-
+ 
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 :root {
   --navy:       #1B3A6B;
   --navy-mid:   #254F94;
@@ -67,17 +93,17 @@
   --font-b: 'DM Sans', system-ui, sans-serif;
   --ease: cubic-bezier(.4,0,.2,1);
 }
-
-html { 
-  scroll-behavior: smooth;
-}
-body { font-family: var(--font-b); color: var(--text); background: var(--white); overflow-x: hidden; }
-
+ 
+/* Accesibilidad: respetar preferencia de movimiento reducido */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
-
-/* NAV */
+ 
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-b); color: var(--text); background: var(--white); overflow-x: hidden; }
+ 
+/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   background: rgba(255,255,255,0.97);
@@ -89,7 +115,7 @@ nav {
   transition: box-shadow .3s var(--ease);
 }
 nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
-
+ 
 .nav-brand { display: flex; align-items: center; gap: 13px; text-decoration: none; }
 .nav-brand-text { display: flex; flex-direction: column; }
 .nav-brand-name {
@@ -113,8 +139,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
   transition: background .2s !important;
 }
 .nav-cta:hover { background: var(--navy-mid) !important; }
-
-/* HERO */
+ 
+/* ── HERO ── */
 .hero {
   min-height: 100vh;
   display: grid; grid-template-columns: 55% 45%;
@@ -165,6 +191,14 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
   transition: border-color .2s, color .2s;
 }
 .btn-outline:hover { border-color: rgba(255,255,255,.65); color: #fff; }
+.btn-call {
+  background: transparent; border: 1px solid var(--gold); color: var(--gold);
+  text-decoration: none; padding: 15px 30px; border-radius: 3px;
+  font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+  transition: background .2s, color .2s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-call:hover { background: var(--gold); color: #fff; }
 .hero-contact {
   margin-top: 50px; padding-top: 36px;
   border-top: 1px solid rgba(255,255,255,.1);
@@ -175,8 +209,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
 .hc-value { font-size: 14px; color: rgba(255,255,255,.82); }
 .hc-value a { color: inherit; text-decoration: none; }
 .hc-value a:hover { color: #fff; }
-
-/* STATS */
+ 
+/* ── STATS ── */
 .stats { background: var(--navy); padding: 52px 5%; }
 .stats-inner {
   max-width: 1080px; margin: 0 auto;
@@ -193,12 +227,12 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
 }
 .stat-n sup { font-size: 28px; color: var(--gold); vertical-align: super; }
 .stat-l { font-size: 10.5px; letter-spacing: .16em; color: rgba(255,255,255,.45); text-transform: uppercase; }
-
-/* SECTIONS */
+ 
+/* ── SECTIONS ── */
 .section { padding: 96px 5%; }
 .section-alt { background: var(--cream); }
 .wrap { max-width: 1080px; margin: 0 auto; }
-
+ 
 .s-eyebrow {
   display: flex; align-items: center; gap: 12px;
   font-size: 10.5px; letter-spacing: .3em; color: var(--gold);
@@ -209,9 +243,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
   font-family: var(--font-d); font-size: clamp(30px,3.8vw,48px);
   font-weight: 300; color: var(--navy); line-height: 1.2; margin-bottom: 56px;
 }
-.s-title em { font-style: normal; color: var(--navy); }
-
-/* SERVICIOS */
+ 
+/* ── SERVICIOS ── */
 .services-grid {
   display: grid; grid-template-columns: repeat(3,1fr);
   gap: 2px; background: var(--border);
@@ -240,8 +273,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
   color: var(--navy); margin-bottom: 12px; line-height: 1.3;
 }
 .srv-desc { font-size: 13.5px; line-height: 1.78; color: var(--muted); font-weight: 300; }
-
-/* NOSOTROS */
+ 
+/* ── NOSOTROS ── */
 .about-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
 }
@@ -262,23 +295,21 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
 }
 .about-badge-year { font-family: var(--font-d); font-size: 26px; font-weight: 600; line-height: 1; }
 .about-badge-txt { font-size: 8.5px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
-.about-quote {
-  position: relative; z-index: 1;
-}
+.about-quote { position: relative; z-index: 1; }
 .about-quote p {
   font-family: var(--font-d); font-size: 20px; font-style: italic;
   font-weight: 300; color: rgba(255,255,255,.85); line-height: 1.55; margin-bottom: 14px;
 }
 .about-quote cite { font-size: 11px; letter-spacing: .15em; color: rgba(255,255,255,.4); font-style: normal; text-transform: uppercase; }
-
+ 
 .about-text p { font-size: 14.5px; line-height: 1.85; color: var(--muted); font-weight: 300; margin-bottom: 18px; }
 .about-list { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
 .about-item { display: flex; gap: 14px; align-items: flex-start; }
 .about-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; margin-top: 8px; }
 .about-item-text { font-size: 13.5px; color: var(--text); line-height: 1.6; }
 .about-item-text strong { font-weight: 500; color: var(--navy); }
-
-/* REFERENCIAS */
+ 
+/* ── REFERENCIAS ── */
 .refs-text {
   max-width: 680px; font-size: 15px; line-height: 1.85; color: var(--muted);
   font-weight: 300; margin-bottom: 52px;
@@ -301,8 +332,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
 }
 .ref-name { font-size: 13px; font-weight: 500; color: var(--navy); }
 .ref-role { font-size: 11.5px; color: var(--muted); }
-
-/* CONTACTO */
+ 
+/* ── CONTACTO ── */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 72px; align-items: start; }
 .contact-intro p { font-size: 14.5px; line-height: 1.8; color: var(--muted); font-weight: 300; margin-bottom: 40px; }
 .cinfo-list { display: flex; flex-direction: column; gap: 22px; }
@@ -315,7 +346,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
 .cinfo-val { font-size: 14.5px; color: var(--text); }
 .cinfo-val a { color: var(--navy); text-decoration: none; font-weight: 500; }
 .cinfo-val a:hover { text-decoration: underline; }
-
+ 
 .cform {
   background: var(--white); border: 1px solid var(--border);
   border-radius: 4px; padding: 44px;
@@ -342,8 +373,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
   cursor: pointer; transition: background .2s, transform .2s var(--ease);
 }
 .btn-submit:hover { background: var(--navy-mid); transform: translateY(-1px); }
-
-/* FOOTER */
+ 
+/* ── FOOTER ── */
 footer { background: var(--navy-dark); padding: 64px 5% 32px; }
 .footer-grid {
   max-width: 1080px; margin: 0 auto;
@@ -366,11 +397,12 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
   border-top: 1px solid rgba(255,255,255,.08); padding-top: 26px;
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
 }
-.footer-bottom p, .footer-bottom a { font-size: 11.5px; color: rgba(255,255,255,.55); font-weight: 300; text-decoration: none; }
-.footer-bottom a:hover { color: rgba(255,255,255,.75); }
+/* Accesibilidad: contraste mejorado en footer-bottom (opacidad .60) */
+.footer-bottom p, .footer-bottom a { font-size: 11.5px; color: rgba(255,255,255,.60); font-weight: 300; text-decoration: none; }
+.footer-bottom a:hover { color: rgba(255,255,255,.90); }
 .footer-bottom-links { display: flex; gap: 20px; }
-
-/* WHATSAPP */
+ 
+/* ── WHATSAPP ── */
 .wa-btn {
   position: fixed; bottom: 30px; right: 30px; z-index: 500;
   background: #25D366; color: #fff; text-decoration: none;
@@ -384,8 +416,8 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
 @keyframes waPop { from{opacity:0;transform:scale(.7) translateY(20px)} to{opacity:1;transform:scale(1) translateY(0)} }
 .wa-btn:hover { background: #1ebe5d; transform: translateY(-3px); box-shadow: 0 8px 26px rgba(37,211,102,.45); }
 .wa-label { white-space: nowrap; }
-
-/* MOBILE */
+ 
+/* ── MOBILE ── */
 @media(max-width:900px){
   .hero { grid-template-columns: 1fr; }
   .hero-left { padding: 100px 6% 72px; }
@@ -404,15 +436,13 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
   .wa-btn { bottom:20px; right:20px; padding:13px; border-radius:50%; }
   .wa-label { display:none; }
 }
-
+ 
 .hero-right {
   background: var(--cream);
   display: flex; align-items: center; justify-content: center;
   padding: 80px 7%;
 }
-.hero-why {
-  width: 100%; max-width: 380px;
-}
+.hero-why { width: 100%; max-width: 380px; }
 .hero-why-title {
   font-family: var(--font-d); font-size: 13px; font-weight: 400;
   letter-spacing: .22em; color: var(--navy); text-transform: uppercase;
@@ -428,8 +458,8 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
 }
 .hero-why-label { font-size: 14px; font-weight: 500; color: var(--navy); margin-bottom: 4px; }
 .hero-why-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; font-weight: 300; }
-
-/* MODAL PRIVACIDAD */
+ 
+/* ── MODAL ── */
 .modal-overlay {
   display: none; position: fixed; inset: 0; z-index: 1000;
   background: rgba(0,0,0,.55); align-items: center; justify-content: center;
@@ -446,41 +476,45 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
   display: flex; align-items: center; justify-content: space-between;
   padding: 24px 32px; border-bottom: 1px solid var(--border); flex-shrink: 0;
 }
-.modal-header h3 {
-  font-family: var(--font-d); font-size: 22px; font-weight: 400; color: var(--navy);
-}
+.modal-header h3 { font-family: var(--font-d); font-size: 22px; font-weight: 400; color: var(--navy); }
 .modal-close {
   width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 50%;
   background: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
-  color: var(--muted); font-size: 18px; transition: background .2s;
-  flex-shrink: 0;
+  color: var(--muted); font-size: 18px; transition: background .2s; flex-shrink: 0;
 }
 .modal-close:hover { background: var(--cream); }
 .modal-body {
   overflow-y: auto; padding: 28px 32px;
   font-size: 13.5px; line-height: 1.85; color: var(--muted); font-weight: 300;
 }
-.modal-body h4 {
-  font-size: 14px; font-weight: 500; color: var(--navy);
-  margin: 24px 0 8px;
-}
+.modal-body h4 { font-size: 14px; font-weight: 500; color: var(--navy); margin: 24px 0 8px; }
 .modal-body h4:first-child { margin-top: 0; }
 .modal-body p { margin-bottom: 4px; }
+ 
+/* ── AVISO LEGAL / COOKIES secciones ocultas ── */
+.legal-section { display: none; }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav id="nav">
-  <a href="#" class="nav-brand">
-    <svg viewBox="-260 -260 520 520" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
-      <defs><clipPath id="cl-nav"><circle cx="0" cy="0" r="250"/></clipPath></defs>
+ 
+<!-- SVG logo reutilizable: definido una sola vez -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <defs>
+    <symbol id="logo-symbol" viewBox="-260 -260 520 520">
+      <defs><clipPath id="cl-sym"><circle cx="0" cy="0" r="250"/></clipPath></defs>
       <circle cx="0" cy="0" r="250" fill="white" stroke="#1B3A6B" stroke-width="6"/>
       <polygon points="0,250 -125,0 125,0" fill="#1B3A6B"/>
       <path d="M -250,0 A 250,250 0 0,1 0,-250 L -125,0 Z" fill="#1B3A6B"/>
       <path d="M 250,0 A 250,250 0 0,0 0,-250 L 125,0 Z" fill="#1B3A6B"/>
-      <rect x="-250" y="-7" width="500" height="14" fill="#1B3A6B" clip-path="url(#cl-nav)"/>
-    </svg>
+      <rect x="-250" y="-7" width="500" height="14" fill="#1B3A6B" clip-path="url(#cl-sym)"/>
+    </symbol>
+  </defs>
+</svg>
+ 
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-brand">
+    <svg width="44" height="44" aria-hidden="true" class="logo-svg"><use href="#logo-symbol"/></svg>
     <div class="nav-brand-text">
       <span class="nav-brand-name">Uceta &amp; Torrealday</span>
       <span class="nav-brand-sub">Administración de Fincas</span>
@@ -493,7 +527,7 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
     <li><a href="#contacto" class="nav-cta">Contactar</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
@@ -508,6 +542,10 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
     </p>
     <div class="hero-btns">
       <a href="#contacto" class="btn-gold">Solicitar información</a>
+      <a href="tel:+34915350713" class="btn-call">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Llamar ahora
+      </a>
       <a href="#servicios" class="btn-outline">Nuestros servicios</a>
     </div>
     <div class="hero-contact">
@@ -525,64 +563,222 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
       </div>
     </div>
   </div>
-
+ 
   <div class="hero-right">
     <div class="hero-why">
       <p class="hero-why-title">¿Por qué elegirnos?</p>
       <div class="hero-why-items">
         <div class="hero-why-item">
           <div class="hero-why-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
             <div class="hero-why-label">Colegiados</div>
-            <div class="hero-why-desc">Colegio de Economistas y Administradores de Fincas de Madrid</div>
+            <div class="hero-why-desc">Colegio de Economistas y Col. Administradores de Fincas de Madrid</div>
           </div>
         </div>
         <div class="hero-why-item">
           <div class="hero-why-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
           </div>
           <div>
             <div class="hero-why-label">Empresa familiar</div>
-            <div class="hero-why-desc">Dos generaciones con el mismo compromiso desde 1998</div>
+            <div class="hero-why-desc">Dos generaciones con el mismo compromiso y equipo estable desde 1998</div>
           </div>
         </div>
         <div class="hero-why-item">
           <div class="hero-why-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
           <div>
             <div class="hero-why-label">Transparencia total</div>
-            <div class="hero-why-desc">Cuentas auditables e informes periódicos</div>
+            <div class="hero-why-desc">Cuentas auditables, informes periódicos y comunicación directa siempre</div>
           </div>
         </div>
         <div class="hero-why-item">
           <div class="hero-why-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
           </div>
           <div>
             <div class="hero-why-label">Más de 25 años</div>
-            <div class="hero-why-desc">Amplia experiencia en Madrid</div>
+            <div class="hero-why-desc">Amplia experiencia en fincas urbanas y patrimonios en el centro de Madrid</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+ 
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-n">25<sup>+</sup></div>
+      <div class="stat-l">Años de experiencia</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n">2</div>
+      <div class="stat-l">Generaciones en el equipo</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n">30<sup>+</sup></div>
+      <div class="stat-l">Fincas gestionadas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n" style="font-size:28px;padding-top:10px">Madrid</div>
+      <div class="stat-l" style="margin-top:6px">Zona de actuación</div>
+    </div>
+  </div>
+</div>
+ 
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <p class="s-eyebrow">Qué hacemos</p>
+    <h2 class="s-title">Servicios integrales de<br>administración inmobiliaria</h2>
+    <div class="services-grid">
+      <div class="srv">
+        <div class="srv-num">01</div>
+        <h3 class="srv-title">Comunidades de Propietarios</h3>
+        <p class="srv-desc">Gestión completa en régimen de propiedad horizontal: juntas ordinarias y extraordinarias, presupuestos, derramas, cobros, pagos y ejecución de acuerdos con total transparencia.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-num">02</div>
+        <h3 class="srv-title">Patrimonio Inmobiliario</h3>
+        <p class="srv-desc">Administración de carteras inmobiliarias para empresas y particulares. Optimización de rentas, gestión de alquileres, mantenimiento y valoración de activos.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-num">03</div>
+        <h3 class="srv-title">Gestión Contable y Financiera</h3>
+        <p class="srv-desc">Elaboración de presupuestos ordinarios y extraordinarios, liquidaciones, gestión bancaria e informes periódicos y detallados para cada propietario o junta.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-num">04</div>
+        <h3 class="srv-title">Asesoría Jurídica</h3>
+        <p class="srv-desc">Conocimiento experto de la Ley de Propiedad Horizontal, Ley de Arrendamientos Urbanos, ITE, VPO y gestión de subvenciones ante organismos públicos y privados.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-num">05</div>
+        <h3 class="srv-title">Mantenimiento y Obras</h3>
+        <p class="srv-desc">Red de arquitectos y gremios especializados de confianza. Coordinación de reparaciones, obras mayores y servicios comunes con garantía de calidad-precio.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-num">06</div>
+        <h3 class="srv-title">Atención Personalizada</h3>
+        <p class="srv-desc">Consultas verbales y por escrito, certificaciones, valoraciones y representación. Trato directo con nuestro equipo — siempre las mismas personas, sin intermediarios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- NOSOTROS -->
+<section class="section section-alt" id="nosotros">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-panel">
+        <div class="about-panel-bg" aria-hidden="true">
+          <svg width="260" height="260"><use href="#logo-symbol"/></svg>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-year">1998</div>
+          <div class="about-badge-txt">Fundada</div>
+        </div>
+        <div class="about-quote">
+          <p>"La transparencia es la base de una cooperación duradera."</p>
+          <cite>— Uceta &amp; Torrealday</cite>
+        </div>
+      </div>
+ 
+      <div class="about-text">
+        <p class="s-eyebrow" style="margin-bottom:16px">Quiénes somos</p>
+        <h2 class="s-title" style="margin-bottom:22px; font-size: clamp(26px,3vw,40px)">Una empresa familiar<br>con vocación de servicio</h2>
+        <p>Somos una empresa familiar madrileña dedicada a la administración de fincas y patrimonios inmobiliarios durante más de 25 años. Gestionamos fincas en régimen de propiedad horizontal y patrimonios de empresas y particulares en los barrios más representativos del centro de Madrid.</p>
+        <p>Lo que nos define es la proximidad con el cliente y la transparencia en toda nuestra gestión. Contamos con dos generaciones trabajando en el mismo proyecto, lo que garantiza continuidad, estabilidad y un conocimiento profundo de cada finca que administramos.</p>
+        <div class="about-list">
+          <div class="about-item">
+            <div class="about-dot"></div>
+            <div class="about-item-text"><strong>Colegiados en el Colegio de Economistas de Madrid</strong> y en el Colegio Profesional de Administradores de Fincas de Madrid.</div>
+          </div>
+          <div class="about-item">
+            <div class="about-dot"></div>
+            <div class="about-item-text"><strong>Competencia, fiabilidad y diligencia</strong> como pilares de nuestra relación con cada comunidad y propietario.</div>
+          </div>
+          <div class="about-item">
+            <div class="about-dot"></div>
+            <div class="about-item-text"><strong>Actuamos como instancia neutral</strong> para armonizar intereses y ofrecer el mejor asesoramiento posible en cada situación.</div>
+          </div>
+          <div class="about-item">
+            <div class="about-dot"></div>
+            <div class="about-item-text"><strong>Nuestro objetivo:</strong> asegurarle el cuidado excelente de su finca y las mejores expectativas para el incremento de su valor.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- REFERENCIAS -->
+<section class="section" id="referencias">
+  <div class="wrap">
+    <p class="s-eyebrow">Referencias</p>
+    <h2 class="s-title">La confianza de nuestros<br>clientes nos avala</h2>
+    <p class="refs-text">En Uceta &amp; Torrealday administramos un gran número de fincas de diversas clases y dimensiones. Los numerosos clientes que llevan años depositando su confianza en nosotros aprecian nuestra fiabilidad, diligencia y sentido de la responsabilidad.</p>
+    <div class="refs-grid">
+      <div class="ref-card">
+        <div class="ref-stars" aria-label="5 estrellas">
+          <span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span>
+        </div>
+        <p class="ref-body">"Llevan gestionando nuestra comunidad más de una década. La tranquilidad que nos dan es total — las cuentas siempre claras y cualquier incidencia resuelta sin demora."</p>
+        <div class="ref-author">
+          <div class="ref-av" aria-hidden="true">MR</div>
+          <div>
+            <div class="ref-name">Presidenta de comunidad</div>
+            <div class="ref-role">Barrio de Chamberí, Madrid</div>
+          </div>
+        </div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-stars" aria-label="5 estrellas">
+          <span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span>
+        </div>
+        <p class="ref-body">"Profesionalidad y cercanía al mismo tiempo. Gestionan nuestro patrimonio con una transparencia que no habíamos encontrado antes. Muy recomendables."</p>
+        <div class="ref-author">
+          <div class="ref-av" aria-hidden="true">JG</div>
+          <div>
+            <div class="ref-name">Propietario particular</div>
+            <div class="ref-role">Madrid centro</div>
+          </div>
+        </div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-stars" aria-label="5 estrellas">
+          <span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span><span class="ref-star" aria-hidden="true">★</span>
+        </div>
+        <p class="ref-body">"Lo mejor es que siempre hablas con las mismas personas. Conocen nuestra finca al detalle y actúan con criterio propio. Una garantía para nuestra comunidad."</p>
+        <div class="ref-author">
+          <div class="ref-av" aria-hidden="true">AP</div>
+          <div>
+            <div class="ref-name">Vicepresidenta de comunidad</div>
+            <div class="ref-role">Barrio de Salamanca, Madrid</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <!-- CONTACTO -->
 <section class="section section-alt" id="contacto">
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-intro">
-        <p class="s-eyebrow">Hablemos</p>
-        <h2 class="s-title">Contacte con nosotros</h2>
-        <p>Si desea información sobre nuestros servicios, quiere solicitar un presupuesto o tiene cualquier consulta, estamos a su disposición.</p>
+        <p class="s-eyebrow" style="margin-bottom:16px">Hablemos</p>
+        <h2 class="s-title" style="margin-bottom:18px; font-size:clamp(26px,3vw,40px)">Contacte<br>con nosotros</h2>
+        <p>Si desea información sobre nuestros servicios, quiere solicitar un presupuesto sin compromiso o necesita resolver cualquier consulta sobre su comunidad o finca, estamos a su disposición.</p>
         <div class="cinfo-list">
           <div class="cinfo">
-            <div class="cinfo-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a2 2 0 012-2h3l2-3h2l2 3h3a2 2 0 012 2 19.5 19.5 0 01-3.07 8.81z"/></svg>
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
             <div>
               <div class="cinfo-label">Teléfono</div>
@@ -590,8 +786,8 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
             </div>
           </div>
           <div class="cinfo">
-            <div class="cinfo-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
             <div>
               <div class="cinfo-label">Email</div>
@@ -599,68 +795,77 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
             </div>
           </div>
           <div class="cinfo">
-            <div class="cinfo-icon">
+            <div class="cinfo-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
               <div class="cinfo-label">Dirección</div>
-              <div class="cinfo-val">C/ Cristóbal Bordiú 35, Despacho 616<br>28003 Madrid</div>
+              <div class="cinfo-val">
+                <a href="https://maps.google.com/?q=C%2F+Crist%C3%B3bal+Bordi%C3%BA+35%2C+28003+Madrid" target="_blank" rel="noopener noreferrer">
+                  C/ Cristóbal Bordiú 35, Despacho 616<br>28003 Madrid
+                </a>
+              </div>
             </div>
           </div>
           <div class="cinfo">
-            <div class="cinfo-icon">
+            <div class="cinfo-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
             </div>
             <div>
               <div class="cinfo-label">Horario telefónico</div>
-              <div class="cinfo-val">Lunes a Viernes · 10:00 – 14:00<br><span style="font-size:13px;color:var(--muted)">Solicite cita previa</span></div>
+              <div class="cinfo-val">Lunes a Viernes · 10:00 – 14:00<br><span style="font-size:13px;color:var(--muted)">Solicite cita previa por teléfono o email</span></div>
             </div>
           </div>
         </div>
       </div>
-
+ 
       <div class="cform">
-        <form name="contact-form" method="POST" data-netlify="true">
-          <h3 class="cform-title">Solicite información</h3>
+        <!-- Formulario Netlify Forms: añadir data-netlify="true" y name al form -->
+        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contacto">
+          <!-- Honeypot anti-spam oculto -->
+          <p style="display:none"><label>No rellenar: <input name="bot-field"></label></p>
+ 
+          <h3 class="cform-title">Solicite información sin compromiso</h3>
           <div class="fg-row">
             <div class="fg">
-              <label for="nombre">Nombre *</label>
-              <input id="nombre" name="nombre" type="text" required>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Su nombre" required autocomplete="given-name">
             </div>
             <div class="fg">
-              <label for="apellidos">Apellidos *</label>
-              <input id="apellidos" name="apellidos" type="text" required>
+              <label for="apellidos">Apellidos</label>
+              <input type="text" id="apellidos" name="apellidos" placeholder="Sus apellidos" required autocomplete="family-name">
             </div>
           </div>
           <div class="fg-row">
             <div class="fg">
-              <label for="telefono">Teléfono *</label>
-              <input id="telefono" name="telefono" type="tel" required>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="6XX XXX XXX" autocomplete="tel">
             </div>
             <div class="fg">
-              <label for="email">Email *</label>
-              <input id="email" name="email" type="email" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email">
             </div>
           </div>
           <div class="fg">
-            <label for="consulta">Tipo de consulta</label>
-            <select id="consulta" name="consulta">
+            <label for="tipo">Tipo de consulta</label>
+            <select id="tipo" name="tipo">
               <option value="">Seleccionar...</option>
-              <option value="comunidades">Administración de comunidad</option>
+              <option value="comunidad">Administración de comunidad de propietarios</option>
               <option value="patrimonio">Gestión de patrimonio inmobiliario</option>
               <option value="alquileres">Alquileres y arrendamientos</option>
               <option value="asesoria">Asesoría jurídica</option>
-              <option value="otro">Otra consulta</option>
+              <option value="otra">Otra consulta</option>
             </select>
           </div>
           <div class="fg">
-            <label for="mensaje">Mensaje *</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntenos cómo podemos ayudarle..." required></textarea>
           </div>
           <div class="fg" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:20px">
-            <input type="checkbox" id="privacy-check" name="privacy" required style="margin-top:3px;width:auto;flex-shrink:0">
-            <label for="privacy-check" style="font-size:12px;color:var(--muted);letter-spacing:0;text-transform:none;font-weight:300;cursor:pointer">
-              He leído y acepto la <button type="button" onclick="abrirPrivacidad(event)" style="background:none;border:none;color:var(--navy);text-decoration:underline;cursor:pointer;padding:0;font:inherit">Política de Privacidad</button>
+            <input type="checkbox" id="privacidad" name="privacidad" required style="margin-top:3px;width:auto;flex-shrink:0">
+            <label for="privacidad" style="font-size:12px;color:var(--muted);letter-spacing:0;text-transform:none;font-weight:300;cursor:pointer">
+              He leído y acepto la <a href="#" onclick="abrirModal('modal-privacidad',event)" style="color:var(--navy);text-decoration:underline">Política de Privacidad</a>. Consiento el tratamiento de mis datos para atender mi consulta.
             </label>
           </div>
           <button class="btn-submit" type="submit">Enviar consulta</button>
@@ -669,112 +874,217 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <h3 class="nav-brand-name" style="color:rgba(255,255,255,.8);font-size:14px;margin-bottom:8px">Uceta &amp; Torrealday</h3>
-      <p>Empresa familiar dedicada a la administración de fincas urbanas y patrimonios inmobiliarios en Madrid desde 1998.</p>
+      <a href="#" class="nav-brand" style="text-decoration:none">
+        <svg width="38" height="38" aria-hidden="true"><use href="#logo-symbol"/></svg>
+        <div>
+          <div class="nav-brand-name" style="color:rgba(255,255,255,.8);font-size:14px">Uceta &amp; Torrealday</div>
+          <div class="nav-brand-sub">Administración de Fincas</div>
+        </div>
+      </a>
+      <p>Empresa familiar dedicada a la administración de fincas urbanas y patrimonios inmobiliarios en Madrid desde 1998. Dos generaciones al servicio de su comunidad.</p>
       <div class="footer-colegs">
         <div class="footer-coleg">✓ Colegio de Economistas de Madrid</div>
-        <div class="footer-coleg">✓ Administradores de Fincas de Madrid</div>
+        <div class="footer-coleg">✓ Col. Administradores de Fincas de Madrid</div>
       </div>
     </div>
     <div class="footer-col">
-      <h4>Enlaces</h4>
+      <h4>Servicios</h4>
       <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Quiénes somos</a></li>
-        <li><a href="#referencias">Referencias</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#servicios">Comunidades de propietarios</a></li>
+        <li><a href="#servicios">Patrimonio inmobiliario</a></li>
+        <li><a href="#servicios">Gestión contable</a></li>
+        <li><a href="#servicios">Asesoría jurídica</a></li>
+        <li><a href="#servicios">Mantenimiento y obras</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Legal</h4>
+      <h4>Empresa</h4>
       <ul>
-        <li><a href="/legal.html">Aviso legal</a></li>
-        <li><a href="#" onclick="abrirPrivacidad(event);return false">Privacidad</a></li>
-        <li><a href="/cookies.html">Política de cookies</a></li>
+        <li><a href="#nosotros">Quiénes somos</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://maps.google.com/?q=C%2F+Crist%C3%B3bal+Bordi%C3%BA+35%2C+28003+Madrid" target="_blank" rel="noopener noreferrer">Cómo llegar</a></li>
+        <li><a href="#" onclick="abrirModal('modal-aviso',event)">Aviso legal</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; <span id="currentYear"></span> Uceta &amp; Torrealday SL · Madrid</p>
+    <p>© <span id="year"></span> Uceta &amp; Torrealday SL · C/ Cristóbal Bordiú 35, Desp. 616 · 28003 Madrid</p>
     <div class="footer-bottom-links">
-      <a href="/legal.html">Aviso legal</a>
-      <a href="#" onclick="abrirPrivacidad(event);return false">Privacidad</a>
-      <a href="/cookies.html">Cookies</a>
+      <a href="#" onclick="abrirModal('modal-aviso',event)">Aviso legal</a>
+      <a href="#" onclick="abrirModal('modal-privacidad',event)">Privacidad</a>
+      <a href="#" onclick="abrirModal('modal-cookies',event)">Cookies</a>
     </div>
   </div>
 </footer>
-
-<!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/34674155780?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20administraci%C3%B3n%20de%20fincas." target="_blank" rel="noopener noreferrer" class="wa-btn" aria-label="Contactar por WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.54-2.059-.06-.297.07-.883.39-1.175.32-.291.671-.377.95-.576.277-.2.463-.39.695-.584.232-.194.464-.388.464-.666 0-.278-.232-.555-.463-.833-.232-.278-.463-.555-.926-.555-.463 0-1.393.232-2.133 1.163-.74.93-1.162 2.092-1.162 2.092s-.463 1.163 0 2.325c.463 1.163 1.625 2.555 3.72 4.186 2.096 1.632 3.25 2.092 3.95 2.207.699.116 1.393 0 1.858-.462.464-.463.926-1.163 1.163-1.857.232-.694.348-.926.579-1.163.232-.236.695-.463.926-.463.232 0 .926.116 1.39.465.465.348.812.812.812 1.394s-.232 1.626-.812 2.556c-.58.929-2.095 2.092-3.95 2.322"/>
+ 
+<!-- WHATSAPP FLOTANTE (corregido: eliminado </span> huérfano) -->
+<a href="https://wa.me/34674155780?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20administraci%C3%B3n%20de%20fincas."
+   target="_blank" rel="noopener noreferrer" class="wa-btn" aria-label="Contactar por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
   <span class="wa-label">WhatsApp</span>
 </a>
-
-<!-- MODAL POLÍTICA DE PRIVACIDAD -->
-<div class="modal-overlay" id="modal-privacidad" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="if(event.target===this)cerrarModal()">
+ 
+<!-- MODAL: POLÍTICA DE PRIVACIDAD -->
+<div class="modal-overlay" id="modal-privacidad" role="dialog" aria-modal="true" aria-labelledby="modal-priv-title" onclick="if(event.target===this)cerrarModal(this.id)">
   <div class="modal-box">
     <div class="modal-header">
-      <h3 id="modal-title">Política de Privacidad</h3>
-      <button class="modal-close" onclick="cerrarModal()" aria-label="Cerrar modal">✕</button>
+      <h3 id="modal-priv-title">Política de Privacidad</h3>
+      <button class="modal-close" onclick="cerrarModal('modal-privacidad')" aria-label="Cerrar">&#x2715;</button>
     </div>
     <div class="modal-body">
       <h4>1. Responsable del tratamiento</h4>
-      <p>UCETA &amp; TORREALDAY SL<br>
+      <p>En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), el responsable del tratamiento es:</p>
+      <p><strong>UCETA &amp; TORREALDAY SL</strong><br>
       C/ Cristóbal Bordiú 35, Despacho 616 · 28003 Madrid<br>
       Tel: +34 91 535 07 13 · Email: gerencia@ucetatorrealday.es</p>
-
+ 
       <h4>2. Finalidad del tratamiento</h4>
-      <p>Los datos facilitados a través del formulario de contacto serán tratados exclusivamente para atender su consulta y prestarle los servicios de administración de fincas solicitados.</p>
-
+      <p>Los datos facilitados a través del formulario de contacto serán tratados exclusivamente para atender su consulta y, en su caso, prestarle los servicios de administración de fincas solicitados. No se tomarán decisiones automatizadas basadas en sus datos.</p>
+ 
       <h4>3. Legitimación</h4>
       <p>La base legal es el consentimiento expreso que usted otorga al marcar la casilla correspondiente (art. 6.1.a RGPD), así como el interés legítimo en atender las consultas recibidas (art. 6.1.f RGPD).</p>
-
+ 
       <h4>4. Conservación de los datos</h4>
-      <p>Sus datos se conservarán durante el tiempo necesario para atender su consulta y, posteriormente, durante los plazos legalmente establecidos para la conservación de registros de negocio.</p>
-
+      <p>Sus datos se conservarán durante el tiempo necesario para atender su consulta y, posteriormente, durante los plazos legalmente establecidos. Una vez cumplida la finalidad, los datos serán suprimidos de forma segura.</p>
+ 
       <h4>5. Destinatarios</h4>
       <p>Sus datos no serán cedidos a terceros salvo obligación legal. No se realizan transferencias internacionales de datos.</p>
-
+ 
       <h4>6. Derechos del interesado</h4>
-      <p>Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad enviando un escrito a la dirección postal o correo indicados en el apartado 1.</p>
-
+      <p>Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad enviando un escrito a la dirección postal o correo indicados en el apartado 1, adjuntando copia de su DNI. También puede reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+ 
       <h4>7. Seguridad</h4>
-      <p>UCETA &amp; TORREALDAY SL ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de sus datos.</p>
+      <p>UCETA &amp; TORREALDAY SL ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de sus datos y evitar su alteración, pérdida o acceso no autorizado.</p>
     </div>
   </div>
 </div>
-
+ 
+<!-- MODAL: AVISO LEGAL -->
+<div class="modal-overlay" id="modal-aviso" role="dialog" aria-modal="true" aria-labelledby="modal-aviso-title" onclick="if(event.target===this)cerrarModal(this.id)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 id="modal-aviso-title">Aviso Legal</h3>
+      <button class="modal-close" onclick="cerrarModal('modal-aviso')" aria-label="Cerrar">&#x2715;</button>
+    </div>
+    <div class="modal-body">
+      <h4>Datos identificativos</h4>
+      <p><strong>UCETA &amp; TORREALDAY SL</strong><br>
+      C/ Cristóbal Bordiú 35, Despacho 616 · 28003 Madrid<br>
+      Tel: +34 91 535 07 13 · Email: gerencia@ucetatorrealday.es</p>
+ 
+      <h4>Objeto</h4>
+      <p>El presente aviso legal regula el uso del sitio web www.ucetatorrealday.es, del que es titular UCETA &amp; TORREALDAY SL, empresa dedicada a la administración de fincas y patrimonios inmobiliarios.</p>
+ 
+      <h4>Propiedad intelectual</h4>
+      <p>Los contenidos del sitio web (textos, imágenes, logotipos, diseño) son propiedad de UCETA &amp; TORREALDAY SL o de terceros que han autorizado su uso. Queda prohibida su reproducción total o parcial sin autorización expresa.</p>
+ 
+      <h4>Responsabilidad</h4>
+      <p>UCETA &amp; TORREALDAY SL no se hace responsable de los daños derivados del uso incorrecto del sitio web ni de la información contenida en el mismo, que puede ser modificada sin previo aviso.</p>
+ 
+      <h4>Legislación aplicable</h4>
+      <p>Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales de Madrid.</p>
+    </div>
+  </div>
+</div>
+ 
+<!-- MODAL: POLÍTICA DE COOKIES -->
+<div class="modal-overlay" id="modal-cookies" role="dialog" aria-modal="true" aria-labelledby="modal-cookies-title" onclick="if(event.target===this)cerrarModal(this.id)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 id="modal-cookies-title">Política de Cookies</h3>
+      <button class="modal-close" onclick="cerrarModal('modal-cookies')" aria-label="Cerrar">&#x2715;</button>
+    </div>
+    <div class="modal-body">
+      <h4>¿Qué son las cookies?</h4>
+      <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten recordar información sobre su visita y mejorar la experiencia de navegación.</p>
+ 
+      <h4>Cookies utilizadas en este sitio</h4>
+      <p>Este sitio web utiliza únicamente cookies técnicas estrictamente necesarias para su correcto funcionamiento. No se utilizan cookies de terceros, de seguimiento ni de publicidad.</p>
+ 
+      <h4>Cookies técnicas</h4>
+      <p>Son imprescindibles para la navegación y el uso de las distintas opciones del sitio web. No requieren consentimiento previo conforme a la normativa vigente.</p>
+ 
+      <h4>Desactivación de cookies</h4>
+      <p>Puede configurar su navegador para bloquear o eliminar las cookies. Tenga en cuenta que desactivar las cookies técnicas puede afectar al funcionamiento correcto del sitio.</p>
+ 
+      <h4>Más información</h4>
+      <p>Para cualquier consulta sobre el uso de cookies puede contactar con nosotros en gerencia@ucetatorrealday.es.</p>
+    </div>
+  </div>
+</div>
+ 
 <script>
-  // Año dinámico en footer
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-  // Modal privacidad
-  function abrirPrivacidad(e) {
+  // ── Año dinámico en footer ──
+  document.getElementById('year').textContent = new Date().getFullYear();
+ 
+  // ── Modal: apertura, cierre y focus trap ──
+  let lastFocused = null;
+ 
+  function abrirModal(id, e) {
     if (e) e.preventDefault();
-    document.getElementById('modal-privacidad').classList.add('active');
+    lastFocused = document.activeElement;
+    const modal = document.getElementById(id);
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    // Foco al primer elemento enfocable dentro del modal
+    const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (focusable.length) focusable[0].focus();
+    // Focus trap
+    modal.addEventListener('keydown', trapFocus);
   }
-  function cerrarModal() {
-    document.getElementById('modal-privacidad').classList.remove('active');
+ 
+  function cerrarModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove('active');
+    modal.removeEventListener('keydown', trapFocus);
     document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
   }
+ 
+  function trapFocus(e) {
+    if (e.key !== 'Tab') return;
+    const modal = e.currentTarget;
+    const focusable = Array.from(modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'));
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  }
+ 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') cerrarModal();
+    if (e.key === 'Escape') {
+      ['modal-privacidad','modal-aviso','modal-cookies'].forEach(id => {
+        const m = document.getElementById(id);
+        if (m && m.classList.contains('active')) cerrarModal(id);
+      });
+    }
   });
-
-  // Navbar scroll effect
+ 
+  // ── Nav scroll ──
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', function() {
     nav.classList.toggle('scrolled', window.scrollY > 40);
   });
+ 
+  // ── Scroll suave para los enlaces internos del nav ──
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
 </script>
-
+ 
 </body>
 </html>
