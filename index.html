@@ -26,6 +26,56 @@
 <meta name="twitter:description" content="Empresa familiar con más de 25 años gestionando comunidades de propietarios y patrimonios inmobiliarios en Madrid.">
 <meta name="twitter:image" content="https://www.ucetatorrealday.es/og-image.jpg">
 
+<!-- SEO: JSON-LD FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye exactamente el servicio de administración de comunidades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El servicio integral incluye la convocatoria y asistencia a juntas ordinarias y extraordinarias, elaboración de presupuestos anuales, gestión de cobros y pagos, contabilidad detallada, gestión de incidencias y averías, tramitación de seguros, asesoría jurídica en materia de Propiedad Horizontal y comunicación directa con los propietarios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se realiza el cambio de administrador de fincas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El cambio se acuerda en junta de propietarios con mayoría simple. Nos encargamos de toda la gestión de traspaso: documentación, saldo de cuentas e historial de la finca. Habitualmente está completado en 30-45 días."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta contratar un administrador de fincas en Madrid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los honorarios dependen del número de propietarios y las características de la finca. Elaboramos siempre un presupuesto personalizado y sin compromiso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué zonas de Madrid trabajan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nuestra actividad se concentra en Madrid capital, con especial presencia en Chamberí, Salamanca, Almagro, Retiro, Malasaña y Justicia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Están colegiados como administradores de fincas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Estamos colegiados en el Colegio Profesional de Administradores de Fincas de Madrid y en el Colegio de Economistas de Madrid, con seguro de responsabilidad civil obligatorio."
+      }
+    }
+  ]
+}
+</script>
+
 <!-- Favicon -->
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -635,6 +685,41 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
 
 /* ── AVISO LEGAL / COOKIES secciones ocultas ── */
 .legal-section { display: none; }
+
+/* ── FAQ ── */
+.faq-grid { display: flex; flex-direction: column; max-width: 780px; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-item:first-child { border-top: 1px solid var(--border); }
+.faq-btn {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 0; gap: 20px;
+  font-family: var(--font-b); font-size: 15px; font-weight: 500;
+  color: var(--navy); text-align: left;
+  transition: color .2s;
+}
+.faq-btn:hover { color: var(--gold); }
+.faq-icon {
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid var(--border); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s, border-color .2s, transform .3s var(--ease);
+  color: var(--navy);
+}
+.faq-btn[aria-expanded="true"] .faq-icon {
+  background: var(--navy); border-color: var(--navy); color: #fff;
+  transform: rotate(45deg);
+}
+.faq-answer {
+  overflow: hidden; max-height: 0;
+  transition: max-height .4s var(--ease);
+}
+.faq-answer.open { max-height: 500px; }
+.faq-answer-inner {
+  padding-bottom: 22px;
+  font-size: 14px; line-height: 1.85; color: var(--muted); font-weight: 300;
+}
+.faq-answer-inner a { color: var(--navy); }
 </style>
 </head>
 <body>
@@ -666,6 +751,7 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#nosotros">Quiénes somos</a></li>
     <li><a href="#referencias">Referencias</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contacto" class="nav-cta">Contactar</a></li>
   </ul>
 </nav>
@@ -906,6 +992,115 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="wrap">
+    <p class="s-eyebrow">Preguntas frecuentes</p>
+    <h2 class="s-title" style="margin-bottom:42px">Todo lo que necesita<br>saber antes de contactar</h2>
+    <div class="faq-grid">
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-1">
+          ¿Qué incluye exactamente el servicio de administración de comunidades?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-1" role="region">
+          <div class="faq-answer-inner">
+            El servicio integral incluye la convocatoria y asistencia a juntas ordinarias y extraordinarias, elaboración de presupuestos anuales, gestión de cobros y pagos, contabilidad detallada, gestión de incidencias y averías con nuestra red de gremios, tramitación de seguros, asesoría jurídica en materia de Propiedad Horizontal y comunicación directa con los propietarios. Todo con informes periódicos y cuentas completamente transparentes y auditables.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-2">
+          ¿Cómo se realiza el cambio de administrador de fincas?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-2" role="region">
+          <div class="faq-answer-inner">
+            El cambio se acuerda en junta de propietarios con mayoría simple. Una vez tomado el acuerdo, nosotros nos encargamos de toda la gestión de traspaso: solicitamos al anterior administrador la documentación, el saldo de cuentas y el historial de la finca. El proceso es transparente y no supone ninguna carga adicional para la comunidad. Habitualmente está completado en 30-45 días.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-3">
+          ¿Cuánto cuesta contratar un administrador de fincas en Madrid?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-3" role="region">
+          <div class="faq-answer-inner">
+            Los honorarios dependen del número de propietarios, las características de la finca y los servicios incluidos. Elaboramos siempre un presupuesto personalizado y sin compromiso. Como referencia, el coste suele repercutir en menos de lo que muchas comunidades gastan en gestiones evitables por una mala administración. <a href="#contacto">Contáctenos</a> y le enviamos una propuesta adaptada a su comunidad.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-4">
+          ¿Gestionan también el patrimonio inmobiliario de particulares?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-4" role="region">
+          <div class="faq-answer-inner">
+            Sí. Gestionamos carteras inmobiliarias tanto de empresas como de propietarios particulares: gestión de alquileres, cobro de rentas, relación con inquilinos, mantenimiento de los inmuebles, optimización de rendimientos y declaraciones de rentas. Es un servicio especialmente valorado por propietarios que tienen varios inmuebles y no disponen de tiempo para gestionarlos directamente.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-5">
+          ¿En qué zonas de Madrid trabajan?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-5" role="region">
+          <div class="faq-answer-inner">
+            Nuestra actividad se concentra en Madrid capital, con especial presencia en los barrios del centro: Chamberí, Salamanca, Almagro, Retiro, Malasaña y Justicia. También gestionamos fincas en otras zonas de la ciudad. Si tiene una comunidad o patrimonio fuera de estas áreas, consúltenos igualmente.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-6">
+          ¿Qué ocurre si hay una avería urgente fuera del horario de oficina?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-6" role="region">
+          <div class="faq-answer-inner">
+            Disponemos de una red de gremios y proveedores de confianza con capacidad de respuesta para urgencias. En caso de avería que no pueda esperar, los presidentes de comunidad cuentan con los contactos necesarios para activar la intervención de forma inmediata. Además, la mayoría de las fincas que administramos disponen de seguro de comunidad que cubre las emergencias más habituales.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq-7">
+          ¿Están colegiados como administradores de fincas?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-7" role="region">
+          <div class="faq-answer-inner">
+            Sí. Estamos colegiados en el Colegio Profesional de Administradores de Fincas de Madrid y en el Colegio de Economistas de Madrid. Esto implica seguro de responsabilidad civil obligatorio, formación continua y sometimiento al código deontológico del colegio, lo que ofrece una garantía adicional a nuestros clientes.
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1322,7 +1517,22 @@ footer { background: var(--navy-dark); padding: 64px 5% 32px; }
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   })();
 
-  // ── CONTADOR animado en stats ──
+  // ── FAQ accordion ──
+  document.querySelectorAll('.faq-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      // Cierra todos
+      document.querySelectorAll('.faq-btn').forEach(function(b) {
+        b.setAttribute('aria-expanded', 'false');
+        document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+      });
+      // Abre el pulsado si estaba cerrado
+      if (!expanded) {
+        this.setAttribute('aria-expanded', 'true');
+        document.getElementById(this.getAttribute('aria-controls')).classList.add('open');
+      }
+    });
+  });
   (function() {
     if (!('IntersectionObserver' in window)) return;
     const observer = new IntersectionObserver(function(entries) {
